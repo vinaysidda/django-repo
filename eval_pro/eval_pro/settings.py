@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["ff76-72-75-216-214.ngrok-free.app",
 "127.0.0.1",
 "localhost",
-'https://djangobackend-dkfmgvadc4crdphy.canadacentral-01.azurewebsites.net/'
+"https://djangobackend-dkfmgvadc4crdphy.canadacentral-01.azurewebsites.net/"
  ]
 
 
