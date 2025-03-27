@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["ff76-72-75-216-214.ngrok-free.app",
 "127.0.0.1",
 "localhost",
-"djangobackend-dkfmgvadc4crdphy.canadacentral-01.azurewebsites.net"
+"http://djangobackend-dkfmgvadc4crdphy.canadacentral-01.azurewebsites.net"
 
 ]
 
@@ -38,7 +38,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "https://ff76-72-75-216-214.ngrok-free.app", # ngrock 
      "http://localhost:8000",
-     "djangobackend-dkfmgvadc4crdphy.canadacentral-01.azurewebsites.net"
+     "http://djangobackend-dkfmgvadc4crdphy.canadacentral-01.azurewebsites.net"
 
 
 ]
@@ -102,27 +102,27 @@ WSGI_APPLICATION = "eval_pro.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
-
 DATABASES = {
     "default": {
-        "ENGINE": "mssql",
-        "NAME": "OfficeManagement",
-        "USER": "",
-        "PASSWORD": "",
-        "HOST": "GANESHA-HP",  # Example: '127.0.0.1' or 'your_server_name'
-        "PORT": "1433",  # Default SQL Server port
-        "OPTIONS": {
-            "driver": "ODBC Driver 17 for SQL Server",
-              "trusted_connection": "yes",
-        },
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "mssql",
+#         "NAME": "OfficeManagement",
+#         "USER": "",
+#         "PASSWORD": "",
+#         "HOST": "GANESHA-HP",  # Example: '127.0.0.1' or 'your_server_name'
+#         "PORT": "1433",  # Default SQL Server port
+#         "OPTIONS": {
+#             "driver": "ODBC Driver 17 for SQL Server",
+#               "trusted_connection": "yes",
+#         },
+#     }
+# }
 
 
 
